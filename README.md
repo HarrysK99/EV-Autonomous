@@ -20,7 +20,7 @@
 <br>
 
 ## 개요
-- 프로젝트 지속기간: 2022.01-2022.09
+- 프로젝트 지속기간: 2022.01-2022.09 (8개월)
 - 개발 언어 및 기술: C++ & Python & ROS
 - 팀 규모: 15인 1팀 (개발 4인 1팀)
 - 센서 모델명
@@ -28,6 +28,8 @@
   - GPS (C099-f9p)
   - Camera (Logitech C270)
 
+- 시스템 흐름도
+  <img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/c9be8fd8-cb39-4c82-94fa-9574904eb983">
 <br>
 
 ## 구현 기능
