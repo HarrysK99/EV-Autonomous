@@ -8,7 +8,7 @@
 
 <p align="center">
   <br>
-  <img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/5bf0c9d0-4ba8-4824-8d98-b836a714b646" width="400" height="400">
+  <img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/5bf0c9d0-4ba8-4824-8d98-b836a714b646" width="400" height="400">  <img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/42fc286c-fb51-4d98-8771-7ffb3fbbafb5" width="400" height="400">
   <br>
 </p>
 
@@ -38,25 +38,29 @@
 <br>
 
 ### Method
-1. 3D LiDAR Object Detection: DBSCAN Clustering
+1. 3D LiDAR Object Detection: DBSCAN Clusteringimg
+<img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/1cdac569-99b7-4ccc-b0b9-9013d2576361" width="200" height="300">
 
 2. Camera Object Detection: Yolo Cone Detection
+<img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/61875dd7-13c9-429c-b115-2479ef8b7085" width="400" height="200">
 
-3. Local Planning
+4. Local Planning
 
     3.1. Sensor Fusion: $Obj = {Obj_{LiDAR}+Obj_{camera}\over{2}}$
 
     3.2. Lane Keeping Algorithm
 
-4. High-Level Control
+5. High-Level Control
 
     4.1. $Steering(\delta)=tan^{-1}(Path)$
 
     4.2. $Velocity(v)=f(v,\delta)$
 
-5. Low-Level Control
+6. Low-Level Control
 
     5.1. PID Controller for each state → $state=K_{P}e+K_{I}\int{e}dt+K_{D}\dot{e}$
+
+    <img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/27d1bc34-106d-4c2e-8fe3-071f25a8486b" width="600" height="300">
 
 <br>
 
