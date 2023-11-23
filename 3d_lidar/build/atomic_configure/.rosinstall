@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kai/catkin_ws/src/dbscan_segment_origin/build/devel/setup.sh
