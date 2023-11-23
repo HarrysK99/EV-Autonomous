@@ -22,25 +22,41 @@
 ## 개요
 - 프로젝트 지속기간: 2022.01-2022.09 (8개월)
 - 개발 언어 및 기술: C++ & Python & ROS
-- 팀 규모: 15인 1팀 (개발 4인 1팀)
+- 팀 규모: 15인 1팀 *(개발 4인 1팀)*
 - 센서 모델명
   - 3D LiDAR (OUSTER OS-1)
   - GPS (C099-f9p)
   - Camera (Logitech C270)
 
-- 시스템 흐름도
-  <img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/c9be8fd8-cb39-4c82-94fa-9574904eb983">
 <br>
 
 ## 구현 기능
 
-### 기능 1
+### Block Diagram
 
-### 기능 2
+<img src="https://github.com/HarrysK99/EV-Autonomous/assets/81846798/c9be8fd8-cb39-4c82-94fa-9574904eb983">
+<br>
 
-### 기능 3
+### Method
+1. 3D LiDAR Object Detection: DBSCAN Clustering
 
-### 기능 4
+2. Camera Object Detection: Yolo Cone Detection
+
+3. Local Planning
+
+    3.1. Sensor Fusion: $Obj = {Obj_{LiDAR}+Obj_{camera}\over{2}}$
+
+    3.2. Lane Keeping Algorithm
+
+4. High-Level Control
+
+    4.1. $Steering(\delta)=tan^{-1}(Path)$
+
+    4.2. $Velocity(v)=f(v,\delta)$
+
+5. Low-Level Control
+
+    5.1. PID Controller for each state → $state=K_{P}e+K_{I}\int{e}dt+K_{D}\dot{e}$
 
 <br>
 
