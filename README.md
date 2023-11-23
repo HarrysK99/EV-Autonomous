@@ -15,7 +15,7 @@
 ## 목차
   - [개요](#개요) 
   - [구현 기능](#구현-기능)
-  - [한계점](#한계점)
+  - [보완할 점](#보완할-점)
 
 <br>
 
@@ -60,9 +60,9 @@
 
 <br>
 
-## 한계점
-
-<p align="justify">
+## 보완할 점
+- [ ] Planning 알고리즘을 더 정교하도록 수정하기 (현재: ***Pure*** Lane Keeping Algorithm)
+- [ ] High-Level Control에 차량 모델을 적용하기 (현재: with ***No*** Vehicle Model)
 
 </p>
 
